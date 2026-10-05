@@ -12,4 +12,5 @@ https://github.com/kurutoga121323-sketch/Old-ChimeraClient-free-mio-render-ver-
 
 showcases:  
 https://www.youtube.com/watch?v=byio7yJeBHA  
-https://youtu.be/aOx84mq4GAs?si=HxBHf4crjEzuIrS4
+https://youtu.be/aOx84mq4GAs?si=HxBHf4crjEzuIrS4  
+https://discord.gg/gqVatTVN9
