@@ -1,0 +1,114 @@
+{
+  "mio.kaban": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/kaban"
+      }
+    ]
+  },
+  "mio.neverlose": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/neverlose"
+      }
+    ]
+  },
+  "mio.css": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/css"
+      }
+    ]
+  },
+  "mio.cod": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/cod"
+      }
+    ]
+  },
+  "mio.quake": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/quake"
+      }
+    ]
+  },
+  "mio.toolbox": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/toolbox"
+      }
+    ]
+  },
+  "mio.warning": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/warning"
+      }
+    ]
+  },
+  "mio.steam": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/steam"
+      }
+    ]
+  },
+  "mio.whatsapp": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/whatsapp"
+      }
+    ]
+  },
+  "mio.vk": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/vk"
+      }
+    ]
+  },
+  "mio.icq": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/icq"
+      }
+    ]
+  },
+  "mio.stalker": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/stalker"
+      }
+    ]
+  },
+  "mio.hover": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/hover"
+      }
+    ]
+  },
+  "mio.click": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/click"
+      }
+    ]
+  },
+  "mio.rclick": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/rclick"
+      }
+    ]
+  },
+  "mio.bodysplat": {
+    "sounds": [
+      {
+        "name": "chimeraclient:mio/bodysplat"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3336 @@
+{
+  "Ambience": [
+    {
+      "field": "brightness",
+      "name": "Brightness",
+      "type": "enum",
+      "class": "Ambience_MixinEntityRendererMode",
+      "default": 1
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -1
+    },
+    {
+      "field": "lightLevel",
+      "name": "LightLevel",
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 15
+    },
+    {
+      "field": "worldTime",
+      "name": "WorldTime",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "sync",
+      "name": "Sync",
+      "type": "boolean",
+      "default": false,
+      "visible": "worldTime"
+    },
+    {
+      "field": "time",
+      "name": "Time",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 24.0
+    },
+    {
+      "field": "worldWeather",
+      "name": "WorldWeather",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "weather",
+      "name": "Weather",
+      "type": "enum",
+      "class": "Ambience_AmbiencePredicateMode",
+      "default": 0,
+      "visible": "worldWeather"
+    },
+    {
+      "field": "force",
+      "name": "Force",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "amount",
+      "name": "Amount",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0
+    }
+  ],
+  "Animations": [
+    {
+      "field": "crystals",
+      "name": "Crystals",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "floatFactor",
+      "name": "FloatFactor",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "crystals"
+    },
+    {
+      "field": "rotationSpeed",
+      "name": "RotationSpeed",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 6.0,
+      "visible": "crystals"
+    },
+    {
+      "field": "crystalScale",
+      "name": "CrystalScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "crystals"
+    },
+    {
+      "field": "parts",
+      "name": "Parts",
+      "type": "boolean",
+      "default": false,
+      "visible": "crystals"
+    },
+    {
+      "field": "inner",
+      "name": "Inner",
+      "type": "boolean",
+      "default": true,
+      "visible": "crystals, parts"
+    },
+    {
+      "field": "outer",
+      "name": "Outer",
+      "type": "boolean",
+      "default": true,
+      "visible": "crystals, parts"
+    },
+    {
+      "field": "core",
+      "name": "Core",
+      "type": "boolean",
+      "default": true,
+      "visible": "crystals, parts"
+    },
+    {
+      "field": "bottom",
+      "name": "Bottom",
+      "type": "boolean",
+      "default": true,
+      "visible": "crystals, parts"
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "static_",
+      "name": "Static",
+      "type": "boolean",
+      "default": false,
+      "visible": "players"
+    },
+    {
+      "field": "sneak",
+      "name": "Sneak",
+      "type": "boolean",
+      "default": false,
+      "visible": "players"
+    },
+    {
+      "field": "playerScale",
+      "name": "PlayerScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "players"
+    }
+  ],
+  "Blur": [
+    {
+      "field": "radius",
+      "name": "Radius",
+      "type": "integer",
+      "default": 6,
+      "min": 1,
+      "max": 8
+    }
+  ],
+  "Borders": [
+    {
+      "field": "chunk",
+      "name": "Chunk",
+      "type": "color",
+      "default": -65536
+    },
+    {
+      "field": "map",
+      "name": "Map",
+      "type": "color",
+      "default": -65281
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "mapSize",
+      "name": "MapSize",
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 4
+    },
+    {
+      "field": "level",
+      "name": "Level",
+      "type": "integer",
+      "default": -1,
+      "min": -1,
+      "max": 255
+    }
+  ],
+  "BreakHighlight": [
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "double",
+      "default": 10.0,
+      "min": 1.0,
+      "max": 25.0
+    },
+    {
+      "field": "friends",
+      "name": "Friends",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "enemyColor",
+      "name": "EnemyColor",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 279542783
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "color",
+      "default": 12425727
+    }
+  ],
+  "Chams": [
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "integer",
+      "default": 60,
+      "min": 1,
+      "max": 300
+    },
+    {
+      "field": "fade",
+      "name": "Fade",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fadeRadius",
+      "name": "FadeRadius",
+      "type": "integer",
+      "default": 75,
+      "min": 1,
+      "max": 100,
+      "visible": "fade"
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 5.0
+    },
+    {
+      "field": "extraLayer",
+      "name": "ExtraLayer",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "model",
+      "name": "Model",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "xqz",
+      "name": "XQZ",
+      "type": "boolean",
+      "default": false,
+      "visible": "model"
+    },
+    {
+      "field": "opacity",
+      "name": "Opacity",
+      "type": "integer",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "visible": "model, xqz"
+    },
+    {
+      "field": "shine2",
+      "name": "Shine",
+      "type": "boolean",
+      "default": false,
+      "visible": "model"
+    },
+    {
+      "field": "speed",
+      "name": "Speed",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "model, shine2"
+    },
+    {
+      "field": "strength",
+      "name": "Strength",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "model, shine2"
+    },
+    {
+      "field": "progress",
+      "name": "Progress",
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "animals",
+      "name": "Animals",
+      "type": "enum",
+      "class": "ChamsMode",
+      "default": 4,
+      "visible": "targets"
+    },
+    {
+      "field": "hostiles",
+      "name": "Hostiles",
+      "type": "enum",
+      "class": "ChamsMode",
+      "default": 4,
+      "visible": "targets"
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "enum",
+      "class": "ChamsMode",
+      "default": 4,
+      "visible": "targets"
+    },
+    {
+      "field": "self",
+      "name": "Self",
+      "type": "enum",
+      "class": "ChamsMode",
+      "default": 4,
+      "visible": "targets"
+    },
+    {
+      "field": "crystals",
+      "name": "Crystals",
+      "type": "enum",
+      "class": "ChamsMode",
+      "default": 4,
+      "visible": "targets"
+    },
+    {
+      "field": "pop",
+      "name": "Pop",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "death",
+      "name": "Death",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets, pop"
+    },
+    {
+      "field": "wireframe",
+      "name": "Wireframe",
+      "type": "enum",
+      "class": "ChamsMode_2",
+      "default": 0,
+      "visible": "targets, pop"
+    },
+    {
+      "field": "animate",
+      "name": "Animate",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets, pop"
+    },
+    {
+      "field": "boost",
+      "name": "Boost",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets, pop, animate"
+    },
+    {
+      "field": "time",
+      "name": "Time",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0,
+      "visible": "targets, pop"
+    },
+    {
+      "field": "motion",
+      "name": "Motion",
+      "type": "float",
+      "default": 0.0,
+      "min": -8.0,
+      "max": 8.0,
+      "visible": "targets, pop"
+    },
+    {
+      "field": "colors",
+      "name": "Colors",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "friends",
+      "name": "Friends",
+      "type": "boolean",
+      "default": false,
+      "visible": "colors"
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 935172607,
+      "visible": "colors"
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "color",
+      "default": -4351489,
+      "visible": "colors"
+    },
+    {
+      "field": "shine",
+      "name": "Shine",
+      "type": "color",
+      "default": 2076023295,
+      "visible": "colors"
+    },
+    {
+      "field": "popFill",
+      "name": "PopFill",
+      "type": "color",
+      "default": 935172607,
+      "visible": "colors"
+    },
+    {
+      "field": "popLine",
+      "name": "PopLine",
+      "type": "color",
+      "default": 12425727,
+      "visible": "colors"
+    }
+  ],
+  "Crosshair": [
+    {
+      "field": "thirdPerson",
+      "name": "ThirdPerson",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "dot",
+      "name": "Dot",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "shadow",
+      "name": "Shadow",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "distance",
+      "name": "Distance",
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 3
+    },
+    {
+      "field": "dynamic",
+      "name": "Dynamic",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "smooth",
+      "name": "Smooth",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "amplitude",
+      "name": "Amplitude",
+      "type": "float",
+      "default": 2.0,
+      "min": 0.1,
+      "max": 8.0
+    },
+    {
+      "field": "gap",
+      "name": "Gap",
+      "type": "integer",
+      "default": 2,
+      "min": 0,
+      "max": 16
+    },
+    {
+      "field": "length",
+      "name": "Length",
+      "type": "integer",
+      "default": 2,
+      "min": 0,
+      "max": 16
+    },
+    {
+      "field": "width",
+      "name": "Width",
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -2828
+    }
+  ],
+  "ESP": [
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "mobOwner",
+      "name": "MobOwner",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "light",
+      "name": "Light",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "hostiles",
+      "name": "Hostiles",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "fill5",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263,
+      "visible": "hostiles, targets"
+    },
+    {
+      "field": "outline2",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153,
+      "visible": "hostiles, targets"
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "fill6",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263,
+      "visible": "players, targets"
+    },
+    {
+      "field": "outline4",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153,
+      "visible": "players, targets"
+    },
+    {
+      "field": "animals",
+      "name": "Animals",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "fill2",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263,
+      "visible": "animals, targets"
+    },
+    {
+      "field": "outline6",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153,
+      "visible": "animals, targets"
+    },
+    {
+      "field": "pearls",
+      "name": "Pearls",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "fill3",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263,
+      "visible": "pearls, targets"
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153,
+      "visible": "pearls, targets"
+    },
+    {
+      "field": "items",
+      "name": "Items",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "mode",
+      "name": "Mode",
+      "type": "enum",
+      "class": "ESPPredicateMode",
+      "default": 0,
+      "visible": "targets, items"
+    },
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "integer",
+      "default": 256,
+      "min": 1,
+      "max": 256,
+      "visible": "targets, items"
+    },
+    {
+      "field": "group",
+      "name": "Group",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "itemsText",
+      "name": "ItemsText",
+      "type": "color",
+      "default": -1
+    },
+    {
+      "field": "background",
+      "name": "Background",
+      "type": "color",
+      "default": 657930
+    },
+    {
+      "field": "scale",
+      "name": "Scale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 2.0
+    },
+    {
+      "field": "fill4",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263
+    },
+    {
+      "field": "outline3",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153
+    },
+    {
+      "field": "exp",
+      "name": "Exp",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 364747263,
+      "visible": "exp, targets"
+    },
+    {
+      "field": "outline5",
+      "name": "Outline",
+      "type": "color",
+      "default": -910321153,
+      "visible": "exp, targets"
+    },
+    {
+      "field": "chorus",
+      "name": "Chorus",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "chorusText",
+      "name": "ChorusText",
+      "type": "color",
+      "default": -1,
+      "visible": "chorus, targets"
+    },
+    {
+      "field": "blocks",
+      "name": "Blocks",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "chests",
+      "name": "Chests",
+      "type": "boolean",
+      "default": true,
+      "visible": "blocks"
+    },
+    {
+      "field": "eChests",
+      "name": "EChests",
+      "type": "boolean",
+      "default": true,
+      "visible": "blocks"
+    },
+    {
+      "field": "shulkers",
+      "name": "Shulkers",
+      "type": "boolean",
+      "default": true,
+      "visible": "blocks"
+    },
+    {
+      "field": "beds",
+      "name": "Beds",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "signs",
+      "name": "Signs",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "dispensers",
+      "name": "Dispensers",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "hoppers",
+      "name": "Hoppers",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "furnaces",
+      "name": "Furnaces",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "pots",
+      "name": "Pots",
+      "type": "boolean",
+      "default": false,
+      "visible": "blocks"
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 4.0
+    }
+  ],
+  "FreeLook": [],
+  "Glint": [
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -1
+    }
+  ],
+  "Highlight": [
+    {
+      "field": "complex",
+      "name": "Complex",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "unreachable",
+      "name": "Unreachable",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": 1992137215
+    },
+    {
+      "field": "fillColor",
+      "name": "FillColor",
+      "type": "color",
+      "default": 12425727
+    }
+  ],
+  "Hitmarker": [
+    {
+      "field": "draw",
+      "name": "Draw",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "length",
+      "name": "Length",
+      "type": "float",
+      "default": 3.0,
+      "min": 0.1,
+      "max": 10.0
+    },
+    {
+      "field": "time",
+      "name": "Time",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0
+    },
+    {
+      "field": "fadeTime",
+      "name": "FadeTime",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.5,
+      "max": 3.0
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -1581409793
+    },
+    {
+      "field": "outlineColor",
+      "name": "OutlineColor",
+      "type": "color",
+      "default": -16777216
+    },
+    {
+      "field": "sound2",
+      "name": "Sound",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "sound",
+      "name": "Sound",
+      "type": "string",
+      "default": "neverlose",
+      "visible": "sound2"
+    },
+    {
+      "field": "volume",
+      "name": "Volume",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "animals",
+      "name": "Animals",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "hostiles",
+      "name": "Hostiles",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "crystals",
+      "name": "Crystals",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "HoleESP": [
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "enum",
+      "class": "HoleESP_HoleESPMode",
+      "default": 2
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "height",
+      "name": "Height",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0
+    },
+    {
+      "field": "radius",
+      "name": "Radius",
+      "type": "integer",
+      "default": 10,
+      "min": 1,
+      "max": 32
+    },
+    {
+      "field": "hideOwn",
+      "name": "HideOwn",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fade",
+      "name": "Fade",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fadeRadius",
+      "name": "FadeRadius",
+      "type": "float",
+      "default": 7.0,
+      "min": 1.0,
+      "max": 16.0
+    },
+    {
+      "field": "safe",
+      "name": "Safe",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "safeFill",
+      "name": "SafeFill",
+      "type": "color",
+      "default": 540373280
+    },
+    {
+      "field": "safeOutline",
+      "name": "SafeOutline",
+      "type": "color",
+      "default": -1037662665
+    },
+    {
+      "field": "unsafe",
+      "name": "Unsafe",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "unsafeFill",
+      "name": "UnsafeFill",
+      "type": "color",
+      "default": 634257408
+    },
+    {
+      "field": "unsafeOutline",
+      "name": "UnsafeOutline",
+      "type": "color",
+      "default": -1077018624
+    },
+    {
+      "field": "trapped",
+      "name": "Trapped",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "trappedFill",
+      "name": "TrappedFill",
+      "type": "color",
+      "default": 233622784
+    },
+    {
+      "field": "trappedOutline",
+      "name": "TrappedOutline",
+      "type": "color",
+      "default": -1073745408
+    }
+  ],
+  "LogoutSpots": [
+    {
+      "field": "distance",
+      "name": "Distance",
+      "type": "float",
+      "default": 128.0,
+      "min": 16.0,
+      "max": 301.0
+    },
+    {
+      "field": "model",
+      "name": "Model",
+      "type": "enum",
+      "class": "LogoutSpots_LogoutSpotsMode_2",
+      "default": 0
+    },
+    {
+      "field": "textured",
+      "name": "Textured",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "alpha",
+      "name": "Alpha",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "field": "width",
+      "name": "Width",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0
+    },
+    {
+      "field": "tracer",
+      "name": "Tracer",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "width2",
+      "name": "Width",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 1.0
+    },
+    {
+      "field": "nameTag",
+      "name": "NameTag",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "textScale",
+      "name": "TextScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0
+    },
+    {
+      "field": "position",
+      "name": "Position",
+      "type": "enum",
+      "class": "LogoutSpots_LogoutSpotsMode",
+      "default": 0
+    },
+    {
+      "field": "time",
+      "name": "Time",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "health",
+      "name": "Health",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "totems",
+      "name": "Totems",
+      "type": "boolean",
+      "default": false,
+      "visible": "nameTag"
+    },
+    {
+      "field": "sounds",
+      "name": "Sounds",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "login",
+      "name": "Login",
+      "type": "boolean",
+      "default": true,
+      "visible": "sounds"
+    },
+    {
+      "field": "sound2",
+      "name": "Sound",
+      "type": "string",
+      "default": "steam",
+      "visible": "sounds, login"
+    },
+    {
+      "field": "logout",
+      "name": "Logout",
+      "type": "boolean",
+      "default": true,
+      "visible": "sounds"
+    },
+    {
+      "field": "sound",
+      "name": "Sound",
+      "type": "string",
+      "default": "steam",
+      "visible": "sounds, logout"
+    },
+    {
+      "field": "colors",
+      "name": "Colors",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "modelFill",
+      "name": "ModelFill",
+      "type": "color",
+      "default": 1019058687
+    },
+    {
+      "field": "modelLine",
+      "name": "ModelLine",
+      "type": "color",
+      "default": -423781889
+    },
+    {
+      "field": "boxFill",
+      "name": "BoxFill",
+      "type": "color",
+      "default": 1019058687
+    },
+    {
+      "field": "boxLine",
+      "name": "BoxLine",
+      "type": "color",
+      "default": -423781889
+    },
+    {
+      "field": "nameTagColor",
+      "name": "NameTagColor",
+      "type": "color",
+      "default": -289564161
+    },
+    {
+      "field": "fillColor",
+      "name": "FillColor",
+      "type": "color",
+      "default": 1292503562
+    },
+    {
+      "field": "filter",
+      "name": "Filter",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "ignoreFriends",
+      "name": "IgnoreFriends",
+      "type": "boolean",
+      "default": false,
+      "visible": "filter"
+    },
+    {
+      "field": "ignoreNakeds",
+      "name": "IgnoreNakeds",
+      "type": "boolean",
+      "default": false,
+      "visible": "filter"
+    }
+  ],
+  "Markers": [],
+  "NameTags": [
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "integer",
+      "default": 60,
+      "min": 1,
+      "max": 300
+    },
+    {
+      "field": "scale",
+      "name": "Scale",
+      "type": "float",
+      "default": 1.2,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "dead",
+      "name": "Dead",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "info",
+      "name": "Info",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "name",
+      "name": "Name",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "ping",
+      "name": "Ping",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "health",
+      "name": "Health",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "healthColor",
+      "name": "HealthColor",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "gamemode",
+      "name": "Gamemode",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "itemName",
+      "name": "ItemName",
+      "type": "boolean",
+      "default": true,
+      "visible": "info"
+    },
+    {
+      "field": "armor",
+      "name": "Armor",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "durability",
+      "name": "Durability",
+      "type": "enum",
+      "class": "NameTags_NameTagsMode",
+      "default": 0,
+      "visible": "info, armor"
+    },
+    {
+      "field": "items",
+      "name": "Items",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "showEating",
+      "name": "ShowEating",
+      "type": "boolean",
+      "default": false,
+      "visible": "info, items"
+    },
+    {
+      "field": "enchants",
+      "name": "Enchants",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "hideMax",
+      "name": "HideMax",
+      "type": "boolean",
+      "default": false,
+      "visible": "info, enchants"
+    },
+    {
+      "field": "totemPops",
+      "name": "TotemPops",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "mioCheck",
+      "name": "MioCheck",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "colors",
+      "name": "Colors",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "friend",
+      "name": "Friend",
+      "type": "boolean",
+      "default": true,
+      "visible": "colors"
+    },
+    {
+      "field": "enemy",
+      "name": "Enemy",
+      "type": "boolean",
+      "default": true,
+      "visible": "colors"
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 657930
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "color",
+      "default": 12425727
+    },
+    {
+      "field": "smart",
+      "name": "Smart",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "hole",
+      "name": "Hole",
+      "type": "color",
+      "default": -937522432
+    },
+    {
+      "field": "phase",
+      "name": "Phase",
+      "type": "color",
+      "default": -922775296
+    },
+    {
+      "field": "text",
+      "name": "Text",
+      "type": "color",
+      "default": -1
+    },
+    {
+      "field": "invisibles",
+      "name": "Invisibles",
+      "type": "color",
+      "default": -65536
+    },
+    {
+      "field": "sneak",
+      "name": "Sneak",
+      "type": "color",
+      "default": -28416
+    },
+    {
+      "field": "eating",
+      "name": "Eating",
+      "type": "color",
+      "default": -16711936
+    }
+  ],
+  "NoBob": [
+    {
+      "field": "multiplier",
+      "name": "Multiplier",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 1.0
+    }
+  ],
+  "NoRender": [
+    {
+      "field": "self",
+      "name": "Self",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "hurtCam",
+      "name": "HurtCam",
+      "type": "boolean",
+      "default": true,
+      "visible": "self"
+    },
+    {
+      "field": "potions",
+      "name": "Potions",
+      "type": "boolean",
+      "default": false,
+      "visible": "self"
+    },
+    {
+      "field": "darkness",
+      "name": "Darkness",
+      "type": "boolean",
+      "default": true,
+      "visible": "self"
+    },
+    {
+      "field": "blindness",
+      "name": "Blindness",
+      "type": "boolean",
+      "default": true,
+      "visible": "self"
+    },
+    {
+      "field": "newSneaking",
+      "name": "NewSneaking",
+      "type": "boolean",
+      "default": false,
+      "visible": "self"
+    },
+    {
+      "field": "totemOverlay",
+      "name": "TotemOverlay",
+      "type": "boolean",
+      "default": false,
+      "visible": "self"
+    },
+    {
+      "field": "hands",
+      "name": "Hands",
+      "type": "boolean",
+      "default": false,
+      "visible": "self"
+    },
+    {
+      "field": "opacity2",
+      "name": "Opacity",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "self, hands"
+    },
+    {
+      "field": "ui",
+      "name": "UI",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "messageIndicator",
+      "name": "MessageIndicator",
+      "type": "boolean",
+      "default": true,
+      "visible": "ui"
+    },
+    {
+      "field": "unsecureServer",
+      "name": "UnsecureServer",
+      "type": "boolean",
+      "default": true,
+      "visible": "ui"
+    },
+    {
+      "field": "tutorialToast",
+      "name": "TutorialToast",
+      "type": "boolean",
+      "default": true,
+      "visible": "ui"
+    },
+    {
+      "field": "textShadow",
+      "name": "TextShadow",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "bossBars",
+      "name": "BossBars",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "scoreBoard",
+      "name": "ScoreBoard",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "tabIcons",
+      "name": "TabIcons",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "heldTooltips",
+      "name": "HeldTooltips",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "tint",
+      "name": "Tint",
+      "type": "boolean",
+      "default": false,
+      "visible": "ui"
+    },
+    {
+      "field": "world",
+      "name": "World",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "explosions",
+      "name": "Explosions",
+      "type": "boolean",
+      "default": true,
+      "visible": "world"
+    },
+    {
+      "field": "worldBorder",
+      "name": "WorldBorder",
+      "type": "boolean",
+      "default": true,
+      "visible": "world"
+    },
+    {
+      "field": "skyLight",
+      "name": "SkyLight",
+      "type": "boolean",
+      "default": false,
+      "visible": "world"
+    },
+    {
+      "field": "fog",
+      "name": "Fog",
+      "type": "boolean",
+      "default": false,
+      "visible": "world"
+    },
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "float",
+      "default": 3.0,
+      "min": 0.1,
+      "max": 10.0,
+      "visible": "fog, world"
+    },
+    {
+      "field": "sky",
+      "name": "Sky",
+      "type": "boolean",
+      "default": false,
+      "visible": "fog, world"
+    },
+    {
+      "field": "particles",
+      "name": "Particles",
+      "type": "boolean",
+      "default": false,
+      "visible": "world"
+    },
+    {
+      "field": "particleTypes",
+      "name": "ParticleTypes",
+      "type": "string",
+      "default": "",
+      "list": true,
+      "visible": "particles, world"
+    },
+    {
+      "field": "selection2",
+      "name": "Selection",
+      "type": "enum",
+      "class": "ScaffoldMode_2",
+      "default": 2,
+      "visible": "particles, world"
+    },
+    {
+      "field": "noBlockBreaking",
+      "name": "NoBlockBreaking",
+      "type": "boolean",
+      "default": false,
+      "visible": "particles, world"
+    },
+    {
+      "field": "entities",
+      "name": "Entities",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "hurt",
+      "name": "Hurt",
+      "type": "boolean",
+      "default": true,
+      "visible": "entities"
+    },
+    {
+      "field": "nameTags",
+      "name": "NameTags",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "interpolation",
+      "name": "Interpolation",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "fire",
+      "name": "Fire",
+      "type": "boolean",
+      "default": true,
+      "visible": "entities"
+    },
+    {
+      "field": "others",
+      "name": "Others",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities, fire"
+    },
+    {
+      "field": "armor",
+      "name": "Armor",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "opacity",
+      "name": "Opacity",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "entities, armor"
+    },
+    {
+      "field": "noCluster",
+      "name": "NoCluster",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "clusterAlpha",
+      "name": "ClusterAlpha",
+      "type": "integer",
+      "default": 120,
+      "min": 0,
+      "max": 255,
+      "visible": "noCluster, entities"
+    },
+    {
+      "field": "tileEntities",
+      "name": "TileEntities",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "tileDistance",
+      "name": "TileDistance",
+      "type": "integer",
+      "default": 64,
+      "min": 1,
+      "max": 256,
+      "visible": "entities, tileEntities"
+    },
+    {
+      "field": "ignoreESP",
+      "name": "IgnoreESP",
+      "type": "boolean",
+      "default": false,
+      "visible": "tileEntities"
+    },
+    {
+      "field": "wardens",
+      "name": "Wardens",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "wardenDistance",
+      "name": "WardenDistance",
+      "type": "integer",
+      "default": 32,
+      "min": 1,
+      "max": 128,
+      "visible": "entities, wardens"
+    },
+    {
+      "field": "entities2",
+      "name": "Entities",
+      "type": "boolean",
+      "default": false,
+      "visible": "entities"
+    },
+    {
+      "field": "entityTypes",
+      "name": "EntityTypes",
+      "type": "string",
+      "default": "",
+      "list": true,
+      "visible": "entities2, entities"
+    },
+    {
+      "field": "removal",
+      "name": "Removal",
+      "type": "enum",
+      "class": "NoRender_NoRenderMode",
+      "default": 0,
+      "visible": "entities, entities2"
+    },
+    {
+      "field": "selection",
+      "name": "Selection",
+      "type": "enum",
+      "class": "ScaffoldMode_2",
+      "default": 2,
+      "visible": "entities, entities2"
+    }
+  ],
+  "Particles": [
+    {
+      "field": "totems",
+      "name": "Totems",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "totemsScale",
+      "name": "TotemsScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "totems"
+    },
+    {
+      "field": "totemsVelocity",
+      "name": "TotemsVelocity",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0,
+      "visible": "totems"
+    },
+    {
+      "field": "totemsColor1",
+      "name": "TotemsColor1",
+      "type": "color",
+      "default": -4351489,
+      "visible": "totems"
+    },
+    {
+      "field": "totemsColor2",
+      "name": "TotemsColor2",
+      "type": "color",
+      "default": -9286761,
+      "visible": "totems"
+    },
+    {
+      "field": "ignoreSelf",
+      "name": "IgnoreSelf",
+      "type": "boolean",
+      "default": false,
+      "visible": "totems"
+    },
+    {
+      "field": "rockets",
+      "name": "Rockets",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "rocketScale",
+      "name": "RocketScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "rockets"
+    },
+    {
+      "field": "rocketColor",
+      "name": "RocketColor",
+      "type": "color",
+      "default": -4351489,
+      "visible": "rockets"
+    },
+    {
+      "field": "damage",
+      "name": "Damage",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "damageScale",
+      "name": "DamageScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "damage"
+    },
+    {
+      "field": "damageVelocity",
+      "name": "DamageVelocity",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0,
+      "visible": "damage"
+    },
+    {
+      "field": "damageColor",
+      "name": "DamageColor",
+      "type": "color",
+      "default": -4351489,
+      "visible": "damage"
+    },
+    {
+      "field": "portal",
+      "name": "Portal",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "portalScale",
+      "name": "PortalScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "portal"
+    },
+    {
+      "field": "portalColor",
+      "name": "PortalColor",
+      "type": "color",
+      "default": -4351489,
+      "visible": "portal"
+    },
+    {
+      "field": "dust",
+      "name": "Dust",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "from",
+      "name": "From",
+      "type": "color",
+      "default": -4351489,
+      "visible": "dust"
+    },
+    {
+      "field": "to",
+      "name": "To",
+      "type": "color",
+      "default": -4351489,
+      "visible": "dust"
+    }
+  ],
+  "PhaseESP": [
+    {
+      "field": "safe",
+      "name": "Safe",
+      "type": "color",
+      "default": 540373280
+    },
+    {
+      "field": "semiSafe",
+      "name": "SemiSafe",
+      "type": "color",
+      "default": 637525248
+    },
+    {
+      "field": "unsafe",
+      "name": "Unsafe",
+      "type": "color",
+      "default": 634257408
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "alpha",
+      "name": "Alpha",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "outline"
+    }
+  ],
+  "Search": [
+    {
+      "field": "whitelist",
+      "name": "Whitelist",
+      "type": "string",
+      "default": "",
+      "list": true
+    },
+    {
+      "field": "entityTypes",
+      "name": "EntityTypes",
+      "type": "string",
+      "default": "",
+      "list": true
+    },
+    {
+      "field": "entities",
+      "name": "Entities",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "ignoreNeg",
+      "name": "IgnoreNeg",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "fillOpacity",
+      "name": "FillOpacity",
+      "type": "float",
+      "default": 0.1,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "tracers",
+      "name": "Tracers",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "tracerOpacity",
+      "name": "TracerOpacity",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "field": "sound",
+      "name": "Sound",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "type",
+      "name": "Type",
+      "type": "string",
+      "default": "warning",
+      "visible": "sound"
+    },
+    {
+      "field": "volume",
+      "name": "Volume",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "sound"
+    },
+    {
+      "field": "ignoreNatural",
+      "name": "IgnoreNatural",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "dungeon",
+      "name": "Dungeon",
+      "type": "boolean",
+      "default": true,
+      "visible": "ignoreNatural"
+    },
+    {
+      "field": "fortress",
+      "name": "Fortress",
+      "type": "boolean",
+      "default": true,
+      "visible": "ignoreNatural"
+    },
+    {
+      "field": "bastion",
+      "name": "Bastion",
+      "type": "boolean",
+      "default": true,
+      "visible": "ignoreNatural"
+    },
+    {
+      "field": "ancientCity",
+      "name": "AncientCity",
+      "type": "boolean",
+      "default": false,
+      "visible": "ignoreNatural"
+    },
+    {
+      "field": "trialChambers",
+      "name": "TrialChambers",
+      "type": "boolean",
+      "default": true,
+      "visible": "ignoreNatural"
+    }
+  ],
+  "Shader": [
+    {
+      "field": "shader",
+      "name": "Shader",
+      "type": "enum",
+      "class": "Shader_MixinHeldItemRendererMode",
+      "default": 0
+    },
+    {
+      "field": "range2",
+      "name": "Range",
+      "type": "integer",
+      "default": 60,
+      "min": 1,
+      "max": 300
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "integer",
+      "default": 1,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "field": "fastLines",
+      "name": "FastLines",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "glow",
+      "name": "Glow",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "quality",
+      "name": "Quality",
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "field": "step",
+      "name": "Step",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.1,
+      "max": 2.0
+    },
+    {
+      "field": "speed",
+      "name": "Speed",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 5.0
+    },
+    {
+      "field": "fillSpeed",
+      "name": "FillSpeed",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "outlineSpeed",
+      "name": "OutlineSpeed",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "fillStrength",
+      "name": "FillStrength",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "outlineStrength",
+      "name": "OutlineStrength",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "image",
+      "name": "Image",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "overlayAlpha",
+      "name": "OverlayAlpha",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "image"
+    },
+    {
+      "field": "decorator",
+      "name": "Decorator",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "type",
+      "name": "Type",
+      "type": "enum",
+      "class": "Shader_Mode",
+      "default": 0,
+      "visible": "decorator"
+    },
+    {
+      "field": "radius",
+      "name": "Radius",
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 20,
+      "visible": "decorator"
+    },
+    {
+      "field": "alpha",
+      "name": "Alpha",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "decorator"
+    },
+    {
+      "field": "colors",
+      "name": "Colors",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 2025691647,
+      "visible": "colors"
+    },
+    {
+      "field": "fillSecond",
+      "name": "FillSecond",
+      "type": "color",
+      "default": 1936677274
+    },
+    {
+      "field": "outline2",
+      "name": "Outline",
+      "type": "color",
+      "default": -4351489,
+      "visible": "colors"
+    },
+    {
+      "field": "outlineSecond",
+      "name": "OutlineSecond",
+      "type": "color",
+      "default": -8625746
+    },
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "hands",
+      "name": "Hands",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "fill2",
+      "name": "Fill",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets, hands"
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets, hands"
+    },
+    {
+      "field": "crystals",
+      "name": "Crystals",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "integer",
+      "default": 60,
+      "min": 1,
+      "max": 300,
+      "visible": "targets, crystals"
+    },
+    {
+      "field": "items",
+      "name": "Items",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "range3",
+      "name": "Range",
+      "type": "integer",
+      "default": 60,
+      "min": 1,
+      "max": 300,
+      "visible": "targets, items"
+    },
+    {
+      "field": "animals",
+      "name": "Animals",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "hostiles",
+      "name": "Hostiles",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "self",
+      "name": "Self",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets, players"
+    },
+    {
+      "field": "exp",
+      "name": "Exp",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "pearls",
+      "name": "Pearls",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "minecarts",
+      "name": "Minecarts",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    },
+    {
+      "field": "dead",
+      "name": "Dead",
+      "type": "boolean",
+      "default": false,
+      "visible": "targets"
+    }
+  ],
+  "Skeleton": [
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -4351489
+    }
+  ],
+  "SkyColor": [
+    {
+      "field": "type",
+      "name": "Type",
+      "type": "enum",
+      "class": "SkyColor_MixinClientWorldMode",
+      "default": 0
+    },
+    {
+      "field": "dense",
+      "name": "Dense",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fog",
+      "name": "Fog",
+      "type": "color",
+      "default": -4351489
+    },
+    {
+      "field": "sky",
+      "name": "Sky",
+      "type": "color",
+      "default": -4351489
+    },
+    {
+      "field": "dimensions",
+      "name": "Dimensions",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "overworld",
+      "name": "Overworld",
+      "type": "boolean",
+      "default": true,
+      "visible": "dimensions"
+    },
+    {
+      "field": "nether",
+      "name": "Nether",
+      "type": "boolean",
+      "default": true,
+      "visible": "dimensions"
+    },
+    {
+      "field": "end",
+      "name": "End",
+      "type": "boolean",
+      "default": true,
+      "visible": "dimensions"
+    }
+  ],
+  "Tooltips": [
+    {
+      "field": "colored",
+      "name": "Colored",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "majorityItem",
+      "name": "MajorityItem",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "keepText",
+      "name": "KeepText",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "shulkerContent",
+      "name": "ShulkerContent",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "beeNest",
+      "name": "BeeNest",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "mapOverlay",
+      "name": "MapOverlay",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "size",
+      "name": "Size",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "Tracers": [
+    {
+      "field": "hitbox",
+      "name": "Hitbox",
+      "type": "enum",
+      "class": "Tracers_TracersMode",
+      "default": 0
+    },
+    {
+      "field": "maxDistance",
+      "name": "MaxDistance",
+      "type": "float",
+      "default": 256.0,
+      "min": 8.0,
+      "max": 256.0
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -65536
+    },
+    {
+      "field": "stem",
+      "name": "Stem",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "distanceColor",
+      "name": "DistanceColor",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "enemyColor",
+      "name": "EnemyColor",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "ignoreFriends",
+      "name": "IgnoreFriends",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "ignoreNakeds",
+      "name": "IgnoreNakeds",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "Trails": [
+    {
+      "field": "render",
+      "name": "Render",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "delay",
+      "name": "Delay",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 5.0
+    },
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "self",
+      "name": "Self",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "players",
+      "name": "Players",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "pearls",
+      "name": "Pearls",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "arrows",
+      "name": "Arrows",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "exp",
+      "name": "Exp",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 5.0
+    },
+    {
+      "field": "fade",
+      "name": "Fade",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "fadeDelay",
+      "name": "FadeDelay",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 10.0
+    },
+    {
+      "field": "fadeDuration",
+      "name": "FadeDuration",
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 10.0
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -1312974337
+    },
+    {
+      "field": "rainbow",
+      "name": "Rainbow",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "threshold",
+      "name": "Threshold",
+      "type": "double",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0,
+      "visible": "rainbow"
+    }
+  ],
+  "Trajectories": [
+    {
+      "field": "onlyOwn",
+      "name": "OnlyOwn",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "predict",
+      "name": "Predict",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "airborne",
+      "name": "Airborne",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 5.0
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -1312974337
+    },
+    {
+      "field": "targets",
+      "name": "Targets",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "bow",
+      "name": "Bow",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "xBow",
+      "name": "XBow",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "trident",
+      "name": "Trident",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "pearls",
+      "name": "Pearls",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "exp",
+      "name": "Exp",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    },
+    {
+      "field": "others",
+      "name": "Others",
+      "type": "boolean",
+      "default": true,
+      "visible": "targets"
+    }
+  ],
+  "Tunnels": [
+    {
+      "field": "verticals",
+      "name": "Verticals",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "height",
+      "name": "Height",
+      "type": "float",
+      "default": 0.1,
+      "min": -1.0,
+      "max": 2.0
+    },
+    {
+      "field": "minLength",
+      "name": "MinLength",
+      "type": "integer",
+      "default": 4,
+      "min": 1,
+      "max": 16
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 1358888960
+    },
+    {
+      "field": "outline",
+      "name": "Outline",
+      "type": "color",
+      "default": -65536
+    }
+  ],
+  "ViewClip": [
+    {
+      "field": "range",
+      "name": "Range",
+      "type": "double",
+      "default": 4.5,
+      "min": 0.1,
+      "max": 30.0
+    },
+    {
+      "field": "smooth",
+      "name": "Smooth",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "ViewModel": [
+    {
+      "field": "adjust",
+      "name": "Adjust",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "shadow",
+      "name": "Shadow",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "noSway",
+      "name": "NoSway",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "instantSwap",
+      "name": "InstantSwap",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "eating",
+      "name": "Eating",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "mainHand2",
+      "name": "MainHand",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "arm",
+      "name": "Arm",
+      "type": "boolean",
+      "default": false,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainX",
+      "name": "MainX",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainY",
+      "name": "MainY",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainZ",
+      "name": "MainZ",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainScaleX",
+      "name": "MainScaleX",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainScaleY",
+      "name": "MainScaleY",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainScaleZ",
+      "name": "MainScaleZ",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainRotateX",
+      "name": "MainRotateX",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainRotateY",
+      "name": "MainRotateY",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "mainRotateZ",
+      "name": "MainRotateZ",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "mainHand2"
+    },
+    {
+      "field": "offHand",
+      "name": "OffHand",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "offX",
+      "name": "OffX",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offY",
+      "name": "OffY",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offZ",
+      "name": "OffZ",
+      "type": "float",
+      "default": 0.0,
+      "min": -1.0,
+      "max": 1.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offScaleX",
+      "name": "OffScaleX",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offScaleY",
+      "name": "OffScaleY",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offScaleZ",
+      "name": "OffScaleZ",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 2.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offRotateX",
+      "name": "OffRotateX",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offRotateY",
+      "name": "OffRotateY",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "offRotateZ",
+      "name": "OffRotateZ",
+      "type": "float",
+      "default": 0.0,
+      "min": 0.0,
+      "max": 360.0,
+      "visible": "offHand"
+    },
+    {
+      "field": "misc",
+      "name": "Misc",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "eatMultiplier",
+      "name": "EatMultiplier",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "misc"
+    },
+    {
+      "field": "noTridentAnim",
+      "name": "NoTridentAnim",
+      "type": "boolean",
+      "default": false,
+      "visible": "misc"
+    },
+    {
+      "field": "swingProgress",
+      "name": "SwingProgress",
+      "type": "boolean",
+      "default": false,
+      "visible": "misc"
+    },
+    {
+      "field": "static_",
+      "name": "Static",
+      "type": "boolean",
+      "default": true,
+      "visible": "misc, swingProgress"
+    },
+    {
+      "field": "mainHand",
+      "name": "MainHand",
+      "type": "boolean",
+      "default": false,
+      "visible": "misc, swingProgress"
+    },
+    {
+      "field": "swingProgressAmount2",
+      "name": "SwingProgressAmount",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "misc, swingProgress, mainHand"
+    },
+    {
+      "field": "offHand2",
+      "name": "OffHand",
+      "type": "boolean",
+      "default": false,
+      "visible": "misc, swingProgress"
+    },
+    {
+      "field": "swingProgressAmount",
+      "name": "SwingProgressAmount",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "visible": "misc, swingProgress, offHand2"
+    },
+    {
+      "field": "viewModelFov",
+      "name": "ViewModelFov",
+      "type": "boolean",
+      "default": false,
+      "visible": "misc"
+    },
+    {
+      "field": "fovAmount",
+      "name": "FovAmount",
+      "type": "integer",
+      "default": 90,
+      "min": 70,
+      "max": 180,
+      "visible": "misc, viewModelFov"
+    }
+  ],
+  "VoidESP": [
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "height",
+      "name": "Height",
+      "type": "float",
+      "default": 0.1,
+      "min": -1.0,
+      "max": 1.0
+    },
+    {
+      "field": "radius",
+      "name": "Radius",
+      "type": "integer",
+      "default": 10,
+      "min": 1,
+      "max": 16
+    },
+    {
+      "field": "fade",
+      "name": "Fade",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "fadeRadius",
+      "name": "FadeRadius",
+      "type": "float",
+      "default": 7.0,
+      "min": 1.0,
+      "max": 16.0
+    },
+    {
+      "field": "colors",
+      "name": "Colors",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "fill",
+      "name": "Fill",
+      "type": "color",
+      "default": 822018048
+    },
+    {
+      "field": "line",
+      "name": "Line",
+      "type": "color",
+      "default": -1140916224
+    }
+  ],
+  "Waypoints": [
+    {
+      "field": "distance",
+      "name": "Distance",
+      "type": "float",
+      "default": 101.0,
+      "min": 0.1,
+      "max": 101.0
+    },
+    {
+      "field": "lineWidth",
+      "name": "LineWidth",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.1,
+      "max": 3.0
+    },
+    {
+      "field": "box",
+      "name": "Box",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "beam",
+      "name": "Beam",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "tracers",
+      "name": "Tracers",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "name",
+      "name": "Name",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "info",
+      "name": "Info",
+      "type": "enum",
+      "class": "Waypoints_WaypointsMode",
+      "default": 0
+    },
+    {
+      "field": "textScale",
+      "name": "TextScale",
+      "type": "float",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0
+    },
+    {
+      "field": "textBackground",
+      "name": "TextBackground",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "eyesAlign",
+      "name": "EyesAlign",
+      "type": "boolean",
+      "default": false,
+      "visible": "name"
+    },
+    {
+      "field": "color",
+      "name": "Color",
+      "type": "color",
+      "default": -457336321
+    },
+    {
+      "field": "beamAlpha",
+      "name": "BeamAlpha",
+      "type": "integer",
+      "default": 40,
+      "min": 0,
+      "max": 255
+    }
+  ],
+  "Xray": [
+    {
+      "field": "bypass",
+      "name": "Bypass",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "whitelist",
+      "name": "Whitelist",
+      "type": "string",
+      "default": "",
+      "list": true
+    }
+  ],
+  "Zoom": [
+    {
+      "field": "smooth",
+      "name": "Smooth",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "smoothCamera",
+      "name": "SmoothCamera",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "field": "scroll",
+      "name": "Scroll",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "field": "amount",
+      "name": "Amount",
+      "type": "integer",
+      "default": 2,
+      "min": 2,
+      "max": 5
+    }
+  ]
+}

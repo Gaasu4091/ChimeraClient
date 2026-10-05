@@ -1,0 +1,41 @@
+﻿{
+    "schemaVersion":  1,
+    "id":  "chimeraclient",
+    "version":  "1.0.0",
+    "name":  "chimeraclient-ported",
+    "description":  "free and opensource client base",
+    "authors":  [
+                    "3arthqu4ke",
+                    "alpha432",
+                    "cattyn"
+                ],
+    "contact":  {
+                    "repo":  "https://github.com/mioclient/chimeraclient-ported"
+                },
+    "license":  [
+                    "MIT",
+                    "AGPL-3.0-or-later",
+                    "GPL-3.0"
+                ],
+    "environment":  "client",
+    "accessWidener":  "chimeraclient.accesswidener",
+    "entrypoints":  {
+                        "client":  [
+                                       "me.alpha432.chimeraclient.ChimeraClient"
+                                   ],
+                        "main":  [
+                                     "me.alpha432.chimeraclient.ChimeraClient"
+                                 ]
+                    },
+    "mixins":  [
+                   "chimeraclient.mixins.json",
+                   "chimerafont.mixins.json",
+                   "chimerashoreline.mixins.json",
+                   "chimeramio.mixins.json"
+               ],
+    "depends":  {
+                    "fabricloader":  "\u003e=0.18.4",
+                    "fabric":  "*",
+                    "minecraft":  "1.21.11"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.alpha432.chimeraclient.mixin.font",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinFontRenderer",
+    "MixinFontDrawContext"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

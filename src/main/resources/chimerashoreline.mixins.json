@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.alpha432.chimeraclient.shoreline.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CrystalSpawnHook",
+    "PendingUpdatesAccess",
+    "DisconnectHook",
+    "ShorelineMovementHook",
+    "ShorelineFrameHook",
+    "ShorelineInputHook",
+    "ShorelineJumpHook",
+    "ShorelineVelocityHook",
+    "ShorelineRenderHook",
+    "ShorelineInteractionHook",
+    "ShorelineItemUsageHook",
+    "InputMovementAccess",
+    "QuietPacketAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
